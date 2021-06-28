@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- SCRIPT -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="./Ressources/SVG/logoTHRFichier 2.svg" type="image/x-icon">
+
+
+    <title>THR | HOME</title>
+</head>
+<body>
+
+    <div class="menu1">
+        <div class="contain">
+            <div class="menu-btn">
+                <div class="circle">
+                    <div class="eye"></div>
+                </div>
+            </div>
+        
+            <div class="navigation">
+                <a href="#radio" class="radio">
+                    RADIO
+                </a>
+                <a href="#mixtapes">
+                    MIXTAPES
+                </a>
+                <!-- <a href="#latest">
+                    LATEST
+                </a> -->
+            </div>
+            <div class="button">
+                <button>SUPPORT US</button>
+            </div>
+            <div class="others">
+                <a href="#" class="shop">
+                    SHOP
+                </a>
+                <a href="#">STUDIO</a>
+            </div>
+            <a href="#" class="account"><img src="./Ressources/PNG/icons8-utilisateur-96.png" alt="Logo user" style="width: 15px;">MY THR</a>
+            <div class="download-apps">
+                <a href="#" class="ios"><i class="fab fa-apple"></i>IOS APP</a>
+                <a href="#"><i class="fab fa-google-play"></i>ANDROID APP</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <section class="nav">
+        <div class="navtop">
+            <div class="left">
+                <img src="./Ressources/SVG/nouveaulogonoirFichier 3.png" alt="Logo THR" class="logo" style="width: 35px; margin-left: 7px;">
+                <ul>
+                    <a href="#radio"><li>RADIO</li></a>
+                    <li>LATEST</li>
+                    <a href="#mixtapes"><li>MIXTAPES</li></a>
+                </ul>
+                <button>SUPPORT US</button>
+                <div class="menu-btn">
+                    <div class="circle">
+                        <div class="eye"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>SHOP</li>
+                    <li>STUDIO</li>
+                    <li class="account"><img src="./Ressources/PNG/icons8-utilisateur-96.png" alt="Logo user" style="width: 15px;">MY THR</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbottom">
+            <div class="playerleft">
+                <div class="live">
+                    <span>LIVE 1</span>
+                    <div class="pointlive"></div>
+                </div>
+                <div class="player">
+                    <div class="bouton">
+                        <div class="controls"><i class="fas fa-play " id="btnPlay"></i>
+                                <i class="fas fa-pause "id="btnPause" style="display: none;"></i> 
+                            </div>
+                            <div class="radioStream">
+                                <audio id="jp_audio_0" preload="metadata"></audio>
+                        </div>
+                    </div>
+                    <div class="metas">
+                        <div class="now">NOW :&nbsp;</div>
+                        <span class="artiste" id="artist">
+                            Tape House
+                        </span>
+                        <span>&nbsp;-&nbsp;</span>
+                        <span class="titre" id="titre">
+                            LIVE 1
+                        </span>
+                    </div>
+                    <div class="current-music img">
+                        <img src="" class="pochette" id="cover" alt="" style="width: 32px; height: 32px; border: 1px solid white;">
+                    </div>
+                    <div class="radioStream">
+                        <audio id="jp_audio_1" preload="metadata"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <div class="playerright">
+                <div class="live">
+                    <span>LIVE 2</span>
+                    <div class="pointlive"></div>
+                </div>
+                <div class="player">
+                    <img src="./Ressources/PNG/icons8-jouer-90.png" alt="" style="width: 20px; height: 20px; margin: 0 10px">
+                    <div class="btn-play-pause">
+                        <img src="" alt="">
+                    </div>
+                    <div class="metas">
+                        <div class="now">NOW :&nbsp;</div>
+                        <div class="artist">
+                            <span>TOUR MAUBOURG</span>
+                        </div>
+                        <div class="music">
+                            <span>ALLEGRESSE</span>
+                        </div>
+                    </div>
+                    <img src="./Ressources/jpg/img2.jpg" alt="Image musique en cours live 2" style="width: 32px; height: 32px; border: 1px solid white;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="blockcaroussel" id="radio">
+        <section class="caroussel">
+            <div class="containimg1">
+                <div class="img1"></div>
+                <div class="txt1">
+                    <span>LIVE 1</span>
+                </div>
+                <div class="txt2">
+                    <span>HOUSE, RAP, JAZZ...</span>
+                </div>
+                <div class="txt3">
+                    <span>24 / 24 - 7 / 7</span>
+                </div>
+            </div>
+            <div class="containimg2">
+                <div class="img2"></div>
+                <div class="txt1">
+                    <span>LIVE 2</span>
+                </div>
+                <div class="txt2">
+                    <span>THE BESTS HOUSE MUSICS</span>
+                </div>
+                <div class="txt3">
+                    <span>24 / 24 - 7 / 7</span>
+                </div>
+            </div>
+            <div class="containimg3">
+                <div class="img3"></div>
+                <div class="txt1">
+                    <span>WHERE</span>
+                </div>
+                <div class="txt2">
+                    <span>U WANT WITH OUR APP</span>
+                </div>
+                <div class="txt3">
+                    <span>iOS & ANDROÏD</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+
+    <section class="mixtapes" id="mixtapes">
+        <span class="title">MIXTAPES</span>
+
+        <div class="all">
+            <div class="card">
+                
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/houseFichier 5.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        ALL LIVES
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE HOUSE</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/deephouseFichier 4.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        ALL LIVES
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE DEEP HOUSE</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/jazzhouseFichier 6.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        ALL LIVES
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE JAZZ HOUSE</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/ambiantFichier 7.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        LIVE 1
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE AMBIANT</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/abstractFichier 8.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        LIVE 1
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE ABSTRACT</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/experimentalFichier 10.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        LIVE 1
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE EXPÉRIMENTAL</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/rapFichier 11.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        LIVE 1
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="name">
+                    <span>MIXTAPE RAP</span>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="cardimg">
+                    <img src="./Ressources/SVG/japaneseFichier 12.svg" alt="Deep House Card">
+                    <div class="blockplay">
+                        <img src="./Ressources/PNG/icons8-jouer-90.png" alt="Play Button">
+                    </div>
+                </div>
+                <div class="metas">
+                    <div class="infos">
+                        <span class="name-radio">
+                        TAPE HOUSE
+                        </span>
+                        <span class="hour">
+                        LIVE 1
+                        </span>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>MIXTAPE JAPANESE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="latest">
+        
+        <div class="subscribe-banniere">
+            <div class="block">
+                <div class="title">
+                    <h1>
+                        <!-- You want support us ? -->
+                        THR SUPPORTERS
+                    </h1>
+                </div>
+                <div class="paragraphe">
+                    <p>
+                        <!-- Running a radio is disproportionately expensive, and to help us keep going we need support. If everyone subscribed for € 1 per month, we could keep radio going for a very long time.
+
+                        If you subscribe for € 2.50 per month, you will have access to the latest music broadcast on both lives, you can add favorite music to find them later, and you will have access to a 20% discount on the entire shop. -->
+
+                        BECOME A THR SUPPORTER AND GET BENEFITS.
+                        <br>
+                        FROM <b>€2,50</b>/month
+                    </p>
+                </div>
+                <button>BECOME A THR SUPPORTER</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+
+    <script src="./script.js"></script>
+    <script src="./menu.js"></script>
+
+</body>
+</html>
